@@ -34,3 +34,31 @@ const myfunction = function () {
 } 
 //function first add in variable use paranthesis and curly bracket with function
 console.log(typeof heros);
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//taking about memories
+//one is "STACK MEMORY" SECOND IS "HEAP MEMORY"
+//IN PREMITIVE DATATYPE STACK MEMORY IS USED
+//IN REFERANCE DATATYPE HEAP MEMORY IS USED
+//example
+
+let myYoutubeName = "ZA Gameplay 123";
+
+let anothername = myYoutubeName;
+anothername = "ilm-saudagar"
+console.log(myYoutubeName);
+
+console.log(anothername);
+
+let userOne = {
+    email : "user@,mailcom",
+    upi : "userbyl"
+}
+
+let userTwo = userOne;
+userTwo.email = "Za@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
