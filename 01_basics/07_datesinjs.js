@@ -34,6 +34,6 @@ console.log(newDate.getFullYear());
 console.log(newDate.getHours());
 
 newDate.toLocaleString('default', {
-    weekday: "long";
+    weekday: "long"
 })
 //basic covered wewill foncus on future
