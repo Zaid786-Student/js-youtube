@@ -48,9 +48,38 @@ const users = [
         email: "mohan@gmail.com"
     },
 ]
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log( Object.keys(tinderUser));
-console.log( Object.values(tinderUser));
-console.log( Object.entries(tinderUser)); //key value pairs
-console.log(tinderUser.hasOwnProperty('isLoggedin')); //for rechecking the property exist or not
+// console.log( Object.keys(tinderUser));
+// console.log( Object.values(tinderUser));
+// console.log( Object.entries(tinderUser)); //key value pairs
+// console.log(tinderUser.hasOwnProperty('isLoggedin')); //for rechecking the property exist or not
+
+const course = {
+    coursename : "js in hindi",
+    price : "999",
+    courseInstructor : "Hitesh"
+}
+// course.courseInstructor we can use this also for check but it takes to lines for every element
+
+const {courseInstructor : instructor} = course //destructure like change name
+
+console.log(instructor);
+
+//JSON
+
+
+//API in form of object
+// {
+//     "name" : "Zaid",
+//     "coursename" : "js in hindi",
+//     "price" : "free"
+// }
+
+//API in form of array
+
+[
+    {},
+    {},
+    {}
+]
