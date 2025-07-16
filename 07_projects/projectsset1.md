@@ -60,3 +60,21 @@ form.addEventListener('submit', function (e) {
 
 
 ```
+
+
+## project 3 soluton
+```javascript
+
+const clock = document.getElementById('clock');
+
+//easy way
+
+
+//better way 
+setInterval(function(){
+  let date = new Date();
+// console.log(date.toLocaleString());
+clock.innerHTML = date.toLocaleTimeString()
+}, 1000) //1000 for 1 sec ad 2000 for 2 sec
+
+```
