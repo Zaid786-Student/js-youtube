@@ -31,6 +31,6 @@ const myn1 = myArr.slice(1, 3) //1st include 2 include 3rd not inclues
 console.log(myn1);
 console.log("B ", myArr);
 
-const myn2 = myArr.splice(1, 3) //1st include 2 include 3rd inclues
+const myn2 = myArr.splice(1, 3) //1st include 2 include 3rd inclues splice use karne par origial array me se wo element hat jate hai
 console.log("C ", myArr);
 console.log(myn2);
