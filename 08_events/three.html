@@ -7,24 +7,43 @@
 </head>
 <body>
     <h1>Chai aur Javascript</h1>
+    <button class="button" id="start">Start</button>
     <button class="button"  id="stop">Stop</button>
-    <button class="button" id="start">start</button>
 </body>
 <script>
-const sayDate = function(str){
+    
+    const sayDate = function(str){
         console.log('Zaid', Date.now(),str);
-        
+
     }
-    const intervalId = setInterval(sayDate,1000, "ZA")
-    document.querySelector("#stop").addEventListener('click', function(){
+    let intervalId = null
+    
+        document.querySelector("#stop").addEventListener('click', function(){
         clearInterval(intervalId)
+        intervalId = null;
         console.log("STOPPED");
         
     })
     document.querySelector("#start").addEventListener('click', function(){
-        setInterval(sayDate,1000, "ZA")
+        intervalId =  setInterval(sayDate,1000, "ZA")
         console.log("START");
         
     })
+    
 </script>
 </html> 
+<!-- let intervalId;
+    // function sayDate() {
+    //     console.log(new Date().toLocaleTimeString());
+        
+    // }
+    // document.getElementById('start').addEventListener("click", function () {
+    //     intervalId = setInterval(sayDate, 1000);
+    // });
+
+    // document.getElementById("stop").addEventListener("click", function () {
+    //   clearInterval(intervalId);
+    //   intervalId = null; // Reset to allow restarting
+    //   console.log("Stopped");
+    // })
+     -->
