@@ -4,14 +4,14 @@ const promise1 = new Promise(function(resolve, reject) {
     setTimeout(function(){
         console.log('Async task is complete');
         resolve()
-    }, 100)
+    }, 1000)
 }) 
 
 promise1.then(function(){
     console.log("Promise Consumed");
     
 })
-
+// promise 2
 new Promise(function(resolve, reject){
     setTimeout(function(){
         console.log("Async Task 2");
@@ -22,6 +22,7 @@ new Promise(function(resolve, reject){
     
 })
 
+// promise 3
 const promise3 = new Promise(function(resolve,reject){
     setTimeout(function(){
         resolve({username : "chai", email : "Chai@examplegmail.com"})
@@ -31,6 +32,7 @@ promise3.then(function(user){
     console.log(user);
 })
 
+// promise 4
 const promise4 = new Promise(function(resolve, reject){
     setTimeout(function(){
         let error = true
@@ -44,7 +46,8 @@ const promise4 = new Promise(function(resolve, reject){
         
     },1000)
 })
-promise4.then((user) => {
+promise4
+.then((user) => {
     console.log(user);
     return user.username
     
@@ -59,6 +62,7 @@ promise4.then((user) => {
     
 })
 
+// promise 5
 const promise5 = new Promise(function(resolve, reject) {
     setTimeout(function(){
         let error = true
